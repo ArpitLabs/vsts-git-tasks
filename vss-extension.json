@@ -4,7 +4,7 @@
     "name": "Create Pull Request",
     "description": "Build task to automatically create pull requests",
     "helpMarkDown": "Forked from https://github.com/sanderaernouts/vsts-git-tasks.git. All credits to original author(s).",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "publisher": "ArpitKhandelwal",
     "public" : false,
     "repository": {
@@ -59,7 +59,7 @@
     },
     "files": [
         {
-            "path": "createpullrequest/createPullRequest.ts"
+            "path": "createpullrequest/createPullRequest.js"
           },
           {
             "path": "createpullrequest/node_modules"
