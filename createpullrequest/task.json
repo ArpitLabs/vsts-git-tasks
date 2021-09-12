@@ -1,14 +1,14 @@
 {
-    "id": "8bf2476b-7cc2-42d7-ae7e-912a5093f3e7",
-    "name": "GitCreatePullRequest",
-    "friendlyName": "Create pull request",
-    "description": "Automatically create a git pull request.",
-    "helpMarkDown": "Create a pull request in the build's git repository. Currently only works in a build that uses a Git repository from TFS/VSTS.",
+    "id": "B4099C95-6CD4-4F88-AF91-4368046D8DF8",
+    "name": "create-pull-requests-azure-devops",
+    "friendlyName": "Create Pull Request",
+    "description": "Create a pull request in the build's git repository. Currently only works in a build that uses a Git repository from TFS/VSTS.",
+    "helpMarkDown": "Forked from https://github.com/sanderaernouts/vsts-git-tasks.git. All credits to original author(s).",
     "category": "Utility",
     "runsOn": [
         "Agent"
     ],
-    "author": "Sander Aernouts",
+    "author": "Arpit Khandelwal",
     "version": {
         "Major": 1,
         "Minor": 0,
@@ -79,6 +79,15 @@
             "helpMarkDown": "Git repository you want to create a pull request for",
             "groupName": "repository",
             "visibleRule": "repositorySelectionMethod = select"
+        },
+        {
+            "name": "title",
+            "type": "string",
+            "label": "Title",
+            "required": true,
+            "helpMarkDown": "Title of the pull request",
+            "defaultValue": "Automatic pull request",
+            "groupName": ""
         },
         {
             "name": "sourceBranch",
